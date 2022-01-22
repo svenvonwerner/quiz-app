@@ -1,0 +1,10 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  height: 48px;
+}
+.title__h1 {
+  color: white;
+}
