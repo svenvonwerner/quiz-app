@@ -1,0 +1,7 @@
+.profil {
+  display: flex;
+}
+
+.profil__img {
+  border-radius: 50%;
+}

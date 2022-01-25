@@ -22,3 +22,15 @@ h1 {
   font-weight: 300;
   text-transform: uppercase;
 }
+
+.h-100vh {
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -5,60 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmarks</title>
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body>
-    <header>
-      <h1>Bookmarks</h1>
-    </header>
 
-    <main>
-      <article>
-        <h2>Question 1</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et
-        </p>
-        <button>Show Answer</button>
-        <ul role="list">
-          <li>tag 1</li>
-          <li>tag 2</li>
-          <li>tag 3</li>
-          <li>tag 4</li>
-        </ul>
-      </article>
-      <article>
-        <h2>Question 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et
-        </p>
-        <button type="button">Show Answer</button>
-        <ul role="list">
-          <li>tag 1</li>
-          <li>tag 2</li>
-          <li>tag 3</li>
-          <li>tag 4</li>
-        </ul>
-      </article>
-    </main>
-    <footer>
-      <nav>
-        <a href=""
-          ><img src="/img/dummy40x40.jpg" alt="" width="" height=""
-        /></a>
-        <a href=""
-          ><img src="/img/dummy40x40.jpg" alt="" width="" height=""
-        /></a>
-        <a href=""
-          ><img src="/img/dummy40x40.jpg" alt="" width="" height=""
-        /></a>
-        <a href=""
-          ><img src="/img/dummy40x40.jpg" alt="" width="" height=""
-        /></a>
+  <body>
+    <div class="app-grid h-100vh">
+      <header class="title">
+        <h1 class="title__h1">Bookmarks</h1>
+      </header>
+
+      <main class="app-grid__scrollarea">
+        <article class="card">
+          <figure class="card__bookmark">
+            <img src="/img/bookmark.png" alt="" width="40" height="40" />
+          </figure>
+          <h2>Question 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et
+          </p>
+          <div class="card__button">
+            <button class="card__button--answer" type="button">
+              Show Answer
+            </button>
+          </div>
+          <ul role="list" class="card__tag-list">
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+          </ul>
+        </article>
+        <article class="card">
+          <figure class="card__bookmark">
+            <img src="/img/bookmark.png" alt="" width="40" height="40" />
+          </figure>
+          <h2>Question 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et
+          </p>
+          <div class="card__button">
+            <button class="card__button--answer" type="button">
+              Show Answer
+            </button>
+          </div>
+          <ul role="list" class="card__tag-list">
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+          </ul>
+        </article>
+        <article class="card">
+          <figure class="card__bookmark">
+            <img src="/img/bookmark.png" alt="" width="40" height="40" />
+          </figure>
+          <h2>Question 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et
+          </p>
+          <div class="card__button">
+            <button class="card__button--answer" type="button">
+              Show Answer
+            </button>
+          </div>
+          <ul role="list" class="card__tag-list">
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+            <li class="card__tag-item">tag 1</li>
+          </ul>
+        </article>
+      </main>
+
+      <nav class="navigation">
+        <ul role="list" class="navigation__list">
+          <a class="navigation__link" href="./index.html">
+            <li class=".navigation__item">
+              <img src="/img/home.png" alt="" width="40" height="40" />
+            </li>
+          </a>
+          <a class="navigation__link" href="./bookmarks.html">
+            <li class=".navigation__item">
+              <img src="/img/bookmark.png" alt="" width="40" height="40" />
+            </li>
+          </a>
+          <a class="navigation__link" href="#">
+            <li class=".navigation__item">
+              <img src="/img/create.png" alt="" width="40" height="40" />
+            </li>
+          </a>
+          <a class="navigation__link" href="#">
+            <li class=".navigation__item">
+              <img src="/img/profil.png" alt="" width="40" height="40" />
+            </li>
+          </a>
+          
+        
       </nav>
-    </footer>
+    </div>
   </body>
 </html>

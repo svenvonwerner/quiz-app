@@ -1,7 +1,10 @@
 @import "./colors.css";
 @import "./base.css";
 @import "./utilty.css";
+@import "/styles/create.css";
+@import "./styles/profil.css";
 
 @import "./components/app-grid.css";
 @import "./components/title.css";
 @import "./components/card.css";
+@import "./components/nav.css";
