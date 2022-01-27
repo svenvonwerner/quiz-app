@@ -10,10 +10,19 @@
 }
 .card__bookmark {
   background-color: white;
-  margin: 0;
+  padding: 3px;
+  margin: 0px;
   position: absolute;
   right: 20px;
   top: -20px;
+}
+
+.card__bookmark--filled {
+  fill: black;
+}
+
+.card__bookmark__img {
+  z-index: 1;
 }
 
 .card__button {
@@ -48,7 +57,7 @@
   background-color: #dadada;
   height: 2rem;
   padding: 3px;
-  width: 3rem;
+  width: 7rem;
   border-radius: 3px;
   gap: 10px;
   margin-bottom: 6px;
