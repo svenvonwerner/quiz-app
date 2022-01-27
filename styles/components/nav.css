@@ -4,7 +4,7 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  border-top: 3px solid var(--color-orange);
+  border-top: 5px solid var(--color-orange);
   background-color: white;
 }
 .navigation__list {
@@ -32,6 +32,6 @@
 }
 
 .navigation__icon {
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: auto;
 }
