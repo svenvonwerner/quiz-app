@@ -1,12 +1,12 @@
 .card {
   position: relative;
-  border: 3px solid var(--color-orange);
-  margin-top: 50px;
+  border: 2px solid var(--color-orange);
+  margin-top: 6rem;
   padding: 1rem;
   border-radius: 9px;
   margin-left: 2rem;
   margin-right: 2rem;
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 .card__bookmark {
   background-color: white;
@@ -18,11 +18,11 @@
 }
 
 .card__bookmark--filled {
-  fill: black;
+  fill: var(--color-black);
 }
 
 .card__bookmark__img {
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .card__button {
@@ -39,6 +39,19 @@
   height: 2.3rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/* .card__text--question {
+  display: none;
+} */
+
+.card__text__answer--hidden {
+  display: none;
+}
+
+.card__text__answer--show {
+  /* display: block; */
+  color: black;
 }
 
 .card__tag-list {

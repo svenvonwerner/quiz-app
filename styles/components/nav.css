@@ -4,8 +4,9 @@
   display: flex;
   position: fixed;
   bottom: 0;
-  border-top: 5px solid var(--color-orange);
+  border-top: 3px solid var(--color-orange);
   background-color: white;
+  align-items: stretch;
 }
 .navigation__list {
   display: flex;
@@ -16,22 +17,22 @@
 }
 
 .navigation__item {
+  border: 1px solid hotpink;
   display: flex;
   justify-content: center;
   flex-grow: 1;
   align-items: center;
   background-color: white;
-  align-content: stretch;
-  height: 40px;
 }
+
 .navigation__link {
   display: flex;
-  justify-content: center;
+  /* justify-content: center;
   flex-grow: 1;
-  align-items: center;
+  align-items: center; */
 }
 
 .navigation__icon {
   height: 45px;
-  width: auto;
+  /* width: auto; */
 }
