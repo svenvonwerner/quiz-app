@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <script defer src="/main.js"></script>
+    <script type="module" defer src="/index.js"></script>
   </head>
 
-  <body>
+  <body class="app-grid h-100vh">
     <div class="app-grid h-100vh">
       <header class="title">
         <h1 class="title__h1">Quiz-App</h1>
@@ -17,11 +17,12 @@
 
       <main class="app-grid__scrollarea">
         <article class="card">
-          <figure data-js="" class="card__bookmark">
+          <figure class="card__bookmark">
             <!-- <img class="card__bookmark__img" src="./img/bookmark.svg" alt="" width="40" height="40" /> -->
             <svg
-              class="card__bookmark__img"
               data-js="svg-bookmark"
+              fill="none"
+              class="card__bookmark__img"
               xmlns="http://www.w3.org/2000/svg"
               width="43"
               height="53"
@@ -38,6 +39,7 @@
               />
             </svg>
           </figure>
+
           <h2>Question 1</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -45,10 +47,20 @@
             erat, sed diam voluptua. At vero eos et accusam et
           </p>
           <div class="card__button">
-            <button class="card__button--answer" type="button">
+            <button
+              data-js="answer-button"
+              class="card__button--answer"
+              type="button"
+            >
               Show Answer
             </button>
           </div>
+          <p data-js="text-answer" class="card__text__answer--hidden">
+            Lorem ipsum text-answerdolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+          </p>
+
           <ul role="list" class="card__tag-list">
             <li class="card__tag-item">tag 1</li>
             <li class="card__tag-item">tag 1</li>
@@ -56,10 +68,31 @@
             <li class="card__tag-item">tag 1</li>
           </ul>
         </article>
-        <!-- <article class="card">
+
+        <article class="card">
           <figure class="card__bookmark">
-            <img src="./img/bookmark.svg" alt="" width="40" height="40">
+            <!-- <img class="card__bookmark__img" src="./img/bookmark.svg" alt="" width="40" height="40" /> -->
+            <svg
+              data-js="svg-bookmark"
+              fill="none"
+              class="card__bookmark__img"
+              xmlns="http://www.w3.org/2000/svg"
+              width="43"
+              height="53"
+              viewBox="0 0 43 53"
+            >
+              <path
+                data-name="Pfad 48"
+                d="M164.085,215h39.563v50l-20.16-16.785L163.648,265Z"
+                transform="translate(-162.148 -213.5)"
+                stroke="black"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+              />
+            </svg>
           </figure>
+
           <h2>Question 2</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -67,10 +100,20 @@
             erat, sed diam voluptua. At vero eos et accusam et
           </p>
           <div class="card__button">
-            <button class="card__button--answer" type="button">
+            <button
+              data-js="answer-button"
+              class="card__button--answer"
+              type="button"
+            >
               Show Answer
             </button>
           </div>
+          <p data-js="text-answer" class="card__text__answer--hidden">
+            Lorem ipsum text-answerdolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+          </p>
+
           <ul role="list" class="card__tag-list">
             <li class="card__tag-item">tag 1</li>
             <li class="card__tag-item">tag 1</li>
@@ -78,28 +121,6 @@
             <li class="card__tag-item">tag 1</li>
           </ul>
         </article>
-        <article class="card">
-          <figure class="card__bookmark">
-            <img src="./img/bookmark.svg" alt="" width="40" height="40">
-          </figure>
-          <h2>Question 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et
-          </p>
-          <div class="card__button">
-            <button class="card__button--answer" type="button">
-              Show Answer
-            </button>
-          </div>
-          <ul role="list" class="card__tag-list">
-            <li class="card__tag-item">tag 1</li>
-            <li class="card__tag-item">tag 1</li>
-            <li class="card__tag-item">tag 1</li>
-            <li class="card__tag-item">tag 1</li>
-          </ul>
-        </article> -->
       </main>
 
       <nav class="navigation">
@@ -125,8 +146,9 @@
               </svg>
             </a>
           </li>
-          <a class="navigation__link" href="./bookmarks.html">
-            <li class="navigation__item">
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="./bookmarks.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="navigation__icon"
@@ -144,10 +166,11 @@
                   stroke-width="3"
                 />
               </svg>
-            </li>
-          </a>
-          <a class="navigation__link" href="./create.html">
-            <li class="navigation__item">
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="./create.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="navigation__icon"
@@ -209,10 +232,11 @@
                   />
                 </g>
               </svg>
-            </li>
-          </a>
-          <a class="navigation__link" href="./profile.html">
-            <li class=".navigation__item">
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="./profile.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="navigation__icon"
@@ -246,8 +270,8 @@
                   />
                 </g>
               </svg>
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
